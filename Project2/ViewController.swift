@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet var button1: UIButton!
+    @IBOutlet var button2: UIButton!
+    @IBOutlet var button3: UIButton!
 }
 

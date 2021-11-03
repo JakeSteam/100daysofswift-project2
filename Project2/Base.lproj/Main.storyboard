@@ -1,24 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mQK-gO-Xcd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ogA-Uh-6zX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fV-FO-o60">
+                                <rect key="frame" x="95" y="100" width="224" height="100"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deb-df-za9">
+                                <rect key="frame" x="95" y="230" width="224" height="100"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdN-if-q69">
+                                <rect key="frame" x="95" y="360" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cyD-rR-f4v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mdN-if-q69" firstAttribute="top" secondItem="deb-df-za9" secondAttribute="bottom" constant="30" id="G19-B1-eIh"/>
+                            <constraint firstItem="deb-df-za9" firstAttribute="top" secondItem="8fV-FO-o60" secondAttribute="bottom" constant="30" id="H1m-Od-YEf"/>
+                            <constraint firstItem="mdN-if-q69" firstAttribute="top" secondItem="cyD-rR-f4v" secondAttribute="top" constant="272" id="eOa-ld-Xom"/>
+                            <constraint firstItem="8fV-FO-o60" firstAttribute="top" secondItem="cyD-rR-f4v" secondAttribute="top" constant="12" id="eS9-Mu-fEp"/>
+                            <constraint firstItem="8fV-FO-o60" firstAttribute="centerX" secondItem="cyD-rR-f4v" secondAttribute="centerX" id="hBG-di-q8T"/>
+                            <constraint firstItem="deb-df-za9" firstAttribute="centerX" secondItem="8fV-FO-o60" secondAttribute="centerX" id="lcP-IA-gY4"/>
+                            <constraint firstItem="mdN-if-q69" firstAttribute="centerX" secondItem="cyD-rR-f4v" secondAttribute="centerX" id="mPq-e2-zQA"/>
+                            <constraint firstItem="deb-df-za9" firstAttribute="top" secondItem="cyD-rR-f4v" secondAttribute="top" constant="142" id="oiG-L2-cOW"/>
+                            <constraint firstItem="deb-df-za9" firstAttribute="centerX" secondItem="cyD-rR-f4v" secondAttribute="centerX" id="yE0-tV-Lfm"/>
+                            <constraint firstItem="mdN-if-q69" firstAttribute="centerX" secondItem="deb-df-za9" secondAttribute="centerX" id="yQR-HY-8J3"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rpP-c4-Et9"/>
+                    <connections>
+                        <outlet property="button1" destination="8fV-FO-o60" id="owU-a9-AO7"/>
+                        <outlet property="button2" destination="deb-df-za9" id="Opf-zX-BjM"/>
+                        <outlet property="button3" destination="mdN-if-q69" id="eBa-9b-5VU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="995.65217391304361" y="116.51785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Kk-2c-kOV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mQK-gO-Xcd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xi8-oA-n0U">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rBT-1H-Gzj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MU5-Tc-sy7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.507246376811594" y="116.51785714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="us" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
